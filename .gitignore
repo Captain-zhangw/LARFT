@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Data (keep included parquet files for reproducibility)
+data/*.jsonl
+data/*.json
+!data/.gitkeep
+!data/train.parquet
+!data/test.parquet
+
+# Results & Checkpoints
+results/
+checkpoints/
+*.ckpt
+*.pt
+*.bin
+*.safetensors
+
+# Logs
+*.log
+nohup.out
+wandb/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Ray
+/tmp/larft_ray/
+
+# HuggingFace cache
+.cache/
